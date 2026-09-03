@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Tools | IBuddy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">IBuddy 🌱</div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="journey.html">My Journey</a>
+      <a href="subjects.html">My Subjects</a>
+      <a href="tools.html">Study Tools</a>
+      <a href="stuck.html">I'm Stuck</a>
+      <a href="reassurance.html">Reassurance</a>
+    </div>
+  </nav>
+
+  <main class="tools-page">
+
+    <section class="page-header">
+      <p class="small-title">Tools to make IB easier 📝</p>
+
+      <h1>Study Tools</h1>
+
+      <p>
+        Keep track of your tasks and give yourself focused time to study.
+      </p>
+    </section>
+
+    <section class="tools-grid">
+
+      <!-- TO-DO LIST -->
+      <div class="tool-card">
+
+        <div class="tool-icon">📝</div>
+
+        <h2>My To-Do List</h2>
+
+        <p>Add tasks you need to complete.</p>
+
+        <div class="task-input">
+          <input
+            type="text"
+            id="taskInput"
+            placeholder="e.g. Finish math homework"
+          >
+
+          <button onclick="addTask()">Add</button>
+        </div>
+
+        <ul id="taskList"></ul>
+
+      </div>
+
+
+      <!-- TIMER -->
+      <div class="tool-card">
+
+        <div class="tool-icon">⏱️</div>
+
+        <h2>Study Timer</h2>
+
+        <p>Focus for 25 minutes, then take a break.</p>
+
+        <div id="timerDisplay" class="timer-display">
+          25:00
+        </div>
+
+        <div class="timer-buttons">
+
+          <button onclick="startTimer()">
+            Start
+          </button>
+
+          <button onclick="pauseTimer()">
+            Pause
+          </button>
+
+          <button onclick="resetTimer()">
+            Reset
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>IBuddy 🌱 — You don't have to figure it out alone.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
