@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start Your IB Journey | IBuddy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">IBuddy 🌱</div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="journey.html">My Journey</a>
+      <a href="subjects.html">My Subjects</a>
+      <a href="tools.html">Study Tools</a>
+      <a href="stuck.html">I'm Stuck</a>
+      <a href="reassurance.html">Reassurance</a>
+    </div>
+  </nav>
+
+  <main class="setup-page">
+
+    <section class="setup-card">
+
+      <p class="small-title">Let's get started 🌱</p>
+
+      <h1>Tell us about your IB journey</h1>
+
+      <p>
+        First, choose your year. Then choose the subjects you want
+        IBuddy to help you with.
+      </p>
+
+      <h2>1. What year are you in?</h2>
+
+      <div class="grade-options">
+
+        <button class="grade-card" onclick="selectGrade('Grade 10', this)">
+          <span>🌱</span>
+          <strong>Grade 10</strong>
+          <small>Getting ready for IB</small>
+        </button>
+
+        <button class="grade-card" onclick="selectGrade('DP1', this)">
+          <span>📚</span>
+          <strong>DP1</strong>
+          <small>Starting the Diploma Programme</small>
+        </button>
+
+        <button class="grade-card" onclick="selectGrade('DP2', this)">
+          <span>🎓</span>
+          <strong>DP2</strong>
+          <small>Finishing your IB journey</small>
+        </button>
+
+      </div>
+
+      <h2>2. Choose your subjects</h2>
+
+      <div class="subject-options">
+
+        <label>
+          <input type="checkbox" value="Mathematics">
+          Mathematics
+        </label>
+
+        <label>
+          <input type="checkbox" value="English">
+          English
+        </label>
+
+        <label>
+          <input type="checkbox" value="Science">
+          Science
+        </label>
+
+        <label>
+          <input type="checkbox" value="Individuals & Societies">
+          Individuals & Societies
+        </label>
+
+        <label>
+          <input type="checkbox" value="Languages">
+          Languages
+        </label>
+
+        <label>
+          <input type="checkbox" value="Business">
+          Business
+        </label>
+
+        <label>
+          <input type="checkbox" value="Global Politics">
+          Global Politics
+        </label>
+
+        <label>
+          <input type="checkbox" value="Other">
+          Other
+        </label>
+
+      </div>
+
+      <button id="continueButton" class="main-button" onclick="finishSetup()" disabled>
+        Create My IB Journey 🌱
+      </button>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>IBuddy 🌱 — You don't have to figure it out alone.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
