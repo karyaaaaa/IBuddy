@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My IB Journey | IBuddy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">IBuddy 🌱</div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="journey.html">My Journey</a>
+      <a href="subjects.html">My Subjects</a>
+      <a href="tools.html">Study Tools</a>
+      <a href="stuck.html">I'm Stuck</a>
+      <a href="reassurance.html">Reassurance</a>
+    </div>
+  </nav>
+
+  <main class="journey-page">
+
+    <section class="page-header">
+      <p class="small-title">Your path through IB 🌱</p>
+
+      <h1 id="journeyTitle">My IB Journey</h1>
+
+      <p>
+        Take it one step at a time. You don't need to figure everything
+        out today.
+      </p>
+    </section>
+
+    <section class="progress-section">
+
+      <div class="progress-info">
+        <span id="progressText">Step 1 of 5</span>
+        <span id="progressPercent">20%</span>
+      </div>
+
+      <div class="progress-bar">
+        <div id="progressFill"></div>
+      </div>
+
+    </section>
+
+    <section id="journeySteps">
+
+      <div class="journey-step" id="step1">
+
+        <div class="step-number">1</div>
+
+        <div class="step-content">
+          <p class="step-label">START HERE</p>
+
+          <h2>Get to know your IB life 🌱</h2>
+
+          <p>
+            Before worrying about grades and deadlines, let's understand
+            what your IB journey actually looks like.
+          </p>
+
+          <ul>
+            <li>Understand how your IB year works.</li>
+            <li>Learn what is expected from you.</li>
+            <li>Figure out what you want help with.</li>
+          </ul>
+
+          <button class="main-button" onclick="completeStep(1)">
+            I've got this → 
+          </button>
+        </div>
+
+      </div>
+
+
+      <div class="journey-step hidden" id="step2">
+
+        <div class="step-number">2</div>
+
+        <div class="step-content">
+          <p class="step-label">YOUR SUBJECTS</p>
+
+          <h2>Get familiar with your subjects 📚</h2>
+
+          <p>
+            You don't need to master everything immediately.
+            Start by understanding what each subject involves.
+          </p>
+
+          <a href="subjects.html" class="secondary-button">
+            View My Subjects
+          </a>
+
+          <button class="main-button" onclick="completeStep(2)">
+            Next → 
+          </button>
+        </div>
+
+      </div>
+
+
+      <div class="journey-step hidden" id="step3">
+
+        <div class="step-number">3</div>
+
+        <div class="step-content">
+          <p class="step-label">GET ORGANIZED</p>
+
+          <h2>Start organizing 📝</h2>
+
+          <p>
+            IB becomes much easier when you know what needs to be done
+            and when it needs to be done.
+          </p>
+
+          <ul>
+            <li>Write down your upcoming tasks.</li>
+            <li>Break large assignments into smaller steps.</li>
+            <li>Give yourself enough time.</li>
+          </ul>
+
+          <a href="tools.html" class="secondary-button">
+            Open Study Tools
+          </a>
+
+          <button class="main-button" onclick="completeStep(3)">
+            Next →
+          </button>
+        </div>
+
+      </div>
+
+
+      <div class="journey-step hidden" id="step4">
+
+        <div class="step-number">4</div>
+
+        <div class="step-content">
+          <p class="step-label">YOUR ROUTINE</p>
+
+          <h2>Build a routine that works for you 🌿</h2>
+
+          <p>
+            You don't need to study every second of the day.
+            Find a routine that gives you time to study, rest, and enjoy life.
+          </p>
+
+          <ul>
+            <li>Choose realistic study times.</li>
+            <li>Take breaks.</li>
+            <li>Keep your workload manageable.</li>
+          </ul>
+
+          <button class="main-button" onclick="completeStep(4)">
+            Next →
+          </button>
+        </div>
+
+      </div>
+
+
+      <div class="journey-step hidden" id="step5">
+
+        <div class="step-number">5</div>
+
+        <div class="step-content">
+          <p class="step-label">KEEP GOING</p>
+
+          <h2>You're ready to keep going 💚</h2>
+
+          <p>
+            IB is a journey, not something you have to finish all at once.
+            Whenever you feel lost, IBuddy is here to help you figure out
+            your next step.
+          </p>
+
+          <button class="main-button" onclick="finishJourney()">
+            Finish Journey 🌱
+          </button>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="journeyComplete" class="completion-card hidden">
+
+      <div class="completion-icon">🌱</div>
+
+      <h2>You did it!</h2>
+
+      <p>
+        You've completed your first IBuddy journey.
+        Now you can start building your own path through IB.
+      </p>
+
+      <a href="index.html" class="main-button">
+        Back Home
+      </a>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>IBuddy 🌱 — You don't have to figure it out alone.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
