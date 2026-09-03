@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I'm Stuck | IBuddy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">IBuddy 🌱</div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="journey.html">My Journey</a>
+      <a href="subjects.html">My Subjects</a>
+      <a href="tools.html">Study Tools</a>
+      <a href="stuck.html">I'm Stuck</a>
+      <a href="reassurance.html">Reassurance</a>
+    </div>
+  </nav>
+
+  <main class="stuck-page">
+
+    <section class="page-header">
+      <p class="small-title">It's okay to need help 💡</p>
+
+      <h1>What are you stuck on?</h1>
+
+      <p>
+        Choose what feels closest to what you're experiencing.
+        We'll help you figure out your next step.
+      </p>
+    </section>
+
+    <section class="stuck-grid">
+
+      <button class="stuck-card" onclick="showStuck('start')">
+        <span class="stuck-icon">🌱</span>
+        <h2>I don't know where to start</h2>
+        <p>Everything feels like a lot and I don't know what to do first.</p>
+      </button>
+
+      <button class="stuck-card" onclick="showStuck('overwhelmed')">
+        <span class="stuck-icon">🌧️</span>
+        <h2>I'm overwhelmed</h2>
+        <p>I have too much to do and I don't know how to manage it.</p>
+      </button>
+
+      <button class="stuck-card" onclick="showStuck('understand')">
+        <span class="stuck-icon">💡</span>
+        <h2>I don't understand something</h2>
+        <p>I understand the question, but I don't understand the topic.</p>
+      </button>
+
+    </section>
+
+    <section id="stuckAdvice" class="advice-card hidden"></section>
+
+  </main>
+
+  <footer>
+    <p>IBuddy 🌱 — You don't have to figure it out alone.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
